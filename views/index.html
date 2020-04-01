@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Casa Criativa</title>
+</head>
+<body>
+
+  <div id="container">
+    <section id="intro">
+      
+      <header>
+        <a href="index.html"><img src="/logo.png" alt="Imagem da Logo"></a>
+      </header>
+      
+      <main>
+        <p>Ficar em casa em períodos longos, não deve ser nada fácil.</p>
+        <p>Iremos catalogar ideias,<strong> brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo que for necessário para tornar esse momento mais interessante.</p>
+        <p>Comece clicando em ver ideias para ver as  ideias cadastradas e contribua adicioando a sua ideia.</p>
+
+      </main>
+
+      <section id="buttons">
+        <button onclick="onOff()">+ Adicionar Ideia</button>
+        <a href="/ideias" class="button">Ver Ideias</a>
+      </section>
+      
+
+      <footer>
+        Com 💗 <a href="https://linktr.ee/pablogomes" target="_blank">Pablo Gomes</a>
+    </footer>
+    </section><!--intro-->
+
+    <section id="last-ideias">
+      {% include "all_ideas.html" %}
+           
+    </section>
+  </div>
+
+  {% include "modal.html" %}
+
+  <script src="/scripts.js"></script>
+</body>
+
+
+</html>
